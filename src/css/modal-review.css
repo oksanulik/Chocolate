@@ -1,0 +1,239 @@
+.modal-review {
+    width: 311px;
+    height: 471px;
+    background-color: var(--soft-color);
+    border-radius: 15px;
+    padding: 32px 31px 32px 24px;   
+}
+
+.modal-review-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-review-close-icon {
+    width: 100%;
+    height: 100%;
+    stroke: var(--text-color);
+}
+
+.modal-review-close-btn:hover .modal-review-close-icon,
+.modal-review-close-btn:focus .modal-review-close-icon {
+    stroke: var(--accent-color);
+}
+
+
+.modal-review-title {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
+
+.modal-review-accent-color {
+    color: var(--accent-color);
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.review-modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modal-review-field {
+    position: relative;
+}
+
+.modal-review-field:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.review-modal-input {
+    width: 100%;
+    height: 45px;
+    border: 2px solid rgba(17, 17, 17, 0.1);
+    border-radius: 8px;
+    padding-left: 18px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02emem;
+    background-color: transparent;
+    transition: border 250ms linear;
+}
+
+.review-modal-input:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+}
+
+.review-modal-input::placeholder {
+    font-weight: 400;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.phone-input {
+    padding-left: 100px;
+}
+
+
+.phone-code {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.phone-code::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-image: url(/img/modal-review/flag.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+}
+
+.phone-code::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: rgba(64, 64, 64, 0.3);
+    margin-left: 8px;
+
+}
+
+
+.review-modal-message {
+    resize: none;
+    width: 100%;
+    height: 90px;
+    padding-top: 14px;
+    padding-right: 18px;
+}
+
+.review-send-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    border: transparent;
+    border-radius: 100px;
+    padding: 12px 28px;
+    transition: var(--hover-animation);
+    margin-top: 12px;
+}
+
+.review-send-btn:hover,
+.review-send-btn:focus {
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+    .modal-review {
+        width: 517px;
+        height: 631px;
+        padding: 40px;
+    }
+
+    .modal-review-close-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .modal-review-title {
+        font-size: 24px;
+        line-height: 1.33;
+        width: 298px;
+        margin-bottom: 40px;
+    }
+
+    .modal-review-accent-color {
+        font-size: 24px;
+        line-height: 1.33;
+    }
+
+    .modal-review-field:not(:last-child) {
+        margin-bottom: 19px;
+    }
+
+    .review-modal-input {
+        height: 66px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        padding-left: 24px;
+        border-radius: 13px;
+    }
+
+    .phone-input {
+        padding-left: 177px;
+    }
+
+    .phone-code::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 24px;
+        margin-right: 18px;
+    }
+
+    .phone-code {
+        font-size: 18px;
+        line-height: 1.22;
+        left: 24px;
+    }
+
+    .phone-code::after {
+        content: "";
+        width: 1px;
+        height: 32px;
+        margin-left: 32px;
+
+    }
+
+    .review-modal-message {
+        height: 137px;
+        padding-top: 22px;
+        padding-right: 24px;
+    }
+
+    .review-send-btn {
+        padding: 14px 40px;
+        margin-top: 8px;
+    }
+}

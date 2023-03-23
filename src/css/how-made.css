@@ -1,0 +1,191 @@
+.how-made {
+    background-color: var(--soft-color);
+}
+iframe {
+    border: none;
+}
+.how-made-title {
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+}
+.how-made-accent-color {
+    color: var(--accent-color);
+}
+.how-made-video {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.video-container {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    border-radius: 15px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.how-made-svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border: 1px solid var(--main-bg-color);
+    padding-left: 5px;
+    background-color: transparent;
+}
+.how-made-svg:hover,
+.how-made-svg:focus{
+    background-color: #FD9222;;
+}
+.how-made-play{
+    fill: #F5F4F4;
+}
+.youtube-video .ytp-large-play-button {
+    display: none;
+}
+.youtube-video .ytp-button:before {
+    content: '';
+    background-image: url('path/to/your/custom/play-button.png');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.youtube-video .how-made-btn:focus {
+    display: none;
+}       
+@media screen and (max-width: 768px) {
+    .how-made-svg{
+        width: 44px;
+        height: 44px;
+        padding-left: 7px;
+    }
+    .how-made-play{
+        width: 20px;
+        height: 21px;
+    }
+}
+.how-made-card {
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.how-made-caption {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #111111;
+}
+.how-made-list {
+    list-style-position: outside;
+    list-style-type: initial;
+    padding-left: 14px;
+}
+.how-made-list-title > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #111111;
+    margin-bottom: 18px;
+}
+.how-made-list-title:last-child {
+    margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+    .how-made > .container {
+        width: 679px;
+    }
+    .how-made-caption{
+        width: 344px;
+    }
+    .how-made-title {
+        margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 1.17;
+    }
+    .video-container {
+        height: 400px;
+        width: 614px;
+    }
+    .how-made-video{
+        width: 614px;
+        height: 400px;
+    }
+    .how-made-card {
+        padding: 32px;
+        padding-right: 102px;
+    }
+    .picture{
+        box-sizing: border-box;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .how-made > .container {
+        width: 1200px;
+    }
+    .how-made-flex {
+        display: flex;
+        gap: 20px;
+    }
+    .video-container{
+        width: 600px;
+    }
+    .how-made-video {
+        width: 600px;
+    margin-bottom: 0;
+    }
+    .how-made-card{
+        padding: 32px;
+    }
+    .how-made-caption{
+        margin-bottom: 28px;
+    }
+    .how-made-list-title{
+        margin-bottom: 24px;
+    }
+    .how-made-list-title:first-child{
+        display: none;
+    }
+    .how-made-list-title{
+        width: 100%;
+    }
+    .how-made-list{
+        width: 452px;
+        padding-right: 12px;
+    }
+}
